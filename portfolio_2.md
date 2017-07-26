@@ -14,7 +14,7 @@ We are going to make some more edits to your portfolio project... here is the wi
 <img width="80%" style="display:block; margin:auto;" src="images/portfolio_design_2.png" />
 <img width="80%" style="display:block; margin:auto;" src="images/portfolio_design_3.png" />
 
-Wireframe with give you the general layout of the page. However, they do not give you colors and too many styles. This will be up to you and your preferences. For now, we are just worried about using HTML and CSS to match this layout.
+Wireframes will give you the general layout of the page. However, they do not give you colors and too many styles. This will be up to you and your preferences. For now, we are just worried about using HTML and CSS to match this layout.
 
 #### Challenge 1 - Nav Bar
 Use your knowledge of ul and li elements to construct the navbar with your name, and 4 other elements (about, experience, skills and projects).
