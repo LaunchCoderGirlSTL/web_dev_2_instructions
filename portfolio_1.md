@@ -1,9 +1,9 @@
 ---
 title: Portfolio
-permalink: /portfolio
+permalink: /portfolio_1
 ---
 
-# Portfolio Project -
+# Setting Up Your Portfolio Project
 
 ### Intro
 Time to start writing some code!
@@ -15,26 +15,39 @@ We will start developing it here in the Learning Track but the real work on it w
 
 #### Challenge 1: Create your HTML and CSS file.
 
-**STEP 1**   
-Create a new directory in your home directory to keep all your coding projects (I would probably call it "Projects" or "CoderGirl" but whatever works for you!).
+**STEP 1** Create a new directory in your home directory to keep all your coding projects (I would probably call it "Projects" or "CoderGirl" but whatever works for you!).
 
-2) Create a new directory IN that directory you just created for your project files. Recommend Name: "portfolio_project"
+**STEP 2** Create a new directory IN that directory you just created for your project files. Recommend Name: "portfolio_project"
 
-3) Open your project directory in Atom (the application you should already have downloaded).
+**STEP 3** Open your project directory in Atom (the application you should already have downloaded).
 
-4) Create File Structure (you should be able to do within Atom).
+**STEP 4** Create File Structure (you should be able to do within Atom).
 
-> create html file... index.html
+- create html file... index.html
+- create styles folder
+- create images folder
+- create css file main.css IN your styles folder
 
-> create styles folder
-
-> create images folder
-
-> create css file main.css
-
-5) Insert your HTML shell code. You can copy and paste the starting HTML from here (Links to an external site.)Links to an external site. and your CSS from here (Links to an external site.)Links to an external site..
-
+Your file structure should look like this:
 ```
+portfolio_project/
+    images/
+        (empty for now)
+
+    styles/
+        main.css
+
+    index.html
+```
+
+**STEP 5** Copy and paste your starting HTML and CSS.  
+
+_note: this is common practice in web development, starting with some html shell code._
+
+
+HTML
+```
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,22 +63,46 @@ Create a new directory in your home directory to keep all your coding projects (
     </div>
 
     <div class='content'>
-      <img src="assets/images/thumbnail.png" alt="Your Github Username" class="thumbnail">
+      <img src="images/thumbnail.png" alt="Your Github Username" class="thumbnail">
       <p>
         Who are you? What are you interested in? What are you doing to learn to code?
       </p>
     </div>
-    <script src='assets/scripts/jquery-3.1.1.min.js'></script>
-    <script src='assets/scripts/main.js'></script>
   </body>
 </html>
+
 ```
 
+CSS
+```
+body {
+  background-color: #eeeeee;
+  color: #030303;
+  margin: 0;
+  padding: 0;
+}
 
-Challenge 2: Update the HTML
+.header {
+  padding: 15px;
+}
 
-1) Update All Text, including your name, tagline and a little description of yourself.
-2) Replace the Thumbnail Picture, with a picture of yourself.
-3) Change the colors of the site to match your preferences :)
+.content {
+  background-color: #030303;
+  color: #eeeeee;
+  padding: 15px;
+}
+
+p {
+  margin: 0 15px;
+}
+```
+
+#### Challenge 2: Update the HTML
+
+**STEP 1** Update All Text, including your name, tagline and a little description of yourself.
+
+**STEP 2** Replace the Thumbnail Picture, with a picture of yourself.
+
+**STEP 3** Change the colors of the site to match your preferences :)
 
 That’s it for now! You will be coming back to this project to keep practicing what you have been learning.
