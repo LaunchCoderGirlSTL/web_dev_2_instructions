@@ -33,9 +33,10 @@ Open you terminal and navigate to your project directory (or local repo).
 
 Do a `git status` to make sure you don't have any outstanding changes. If you do, go ahead and make a new commit.
 
-> `git add .`
-> `git commit -m "message about what changed"`
-
+```
+git add .
+git commit -m "message about what changed"
+```
 
 **STEP 2: Add a new remote repository**
 Now, go back to your github repository page (the one that you should have left up).
@@ -56,6 +57,7 @@ git remote add origin (url you just copied)
 
 Use the command `git remote -v` to see if the remote repo was linked correctly. The command should display
 > origin 'url that you pasted' (fetch)
+
 > origin 'url that you pasted' (push)
 
 origin being the remote "nickname" and the url to your github repo. note: fetch and push are there stating that you have read and write access to the repository, meaning you can get changes AND make changes.
