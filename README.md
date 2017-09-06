@@ -12,6 +12,7 @@ This site is just a list of assignments...
 * [Cat Costume 1](cat_costume_1)
 * [Cat Costume 2](cat_costume_2)
 * [Using Git 1](using_git_1)
+* [CG Education - JS 1](cg_ed_1)
 
 
 
