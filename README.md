@@ -18,6 +18,7 @@ This site is just a list of assignments...
 
 * [CG Education - JS 1](cg_ed_1)
 * [CG Education - JS 2](cg_ed_2)
+* [CG Education - JS 3](cg_ed_3)
 
 
 ## Other Resources
