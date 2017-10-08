@@ -29,7 +29,7 @@ Try to take in what they are saying and complete the challenges, but if you are 
 
 Now let's go back to your cg education project.
 
-Our goal: To use our new knowledge to implement a prompt that asks the user to enter a student's expected college graduation date and then based on the entered month and year welcomes the high school or college student.
+Our goal: To use our new knowledge to implement a prompt that asks the user to enter a student's expected college graduation date and then based on the entered month and year, welcome the high school or college student.
 
 **STEP 2: Welcoming Some Students**
 Now we are going to practice writing some anonymous functions. Yay!
@@ -55,25 +55,47 @@ outputs: `"May 2018"`
 
 Now let's create a function called welcomeStudentsByGraduatingClass.
 
-It should take 2 parameters a gradDate and a welcome function. This function should use the grad date to figure out what graduating class the student is in (like Freshman, Sophomore, etc), then call the welcome function and pass the correct graduating class as a parameter.
+It should take 2 parameters a gradDate (like "May 2018") and a welcome function. This function should use the grad date to figure out what graduating class the student is in (like Freshman, Sophomore, etc), then call the welcome function and pass the correct graduating class as a parameter.
 
 
 **STEP 4: Prompting User**
 
-We need to prompt the user twice. One time for the student's graduation year and one for the student's graduation month.
+We need to prompt the user twice. One time for the student's college graduation year and one for the student's college graduation month.
 
 > To simplify things we are going to assume that there are only 2 possible graduation months... May and December.
 
 
 **STEP 5: Processing User Prompt**
 
-if the user input was not empty...
+If the user input was not empty...
 
 use the college grad year to figure out if the student is currently in high school or college...
 
-then call the welcomeStudentByGraduatingClass sending it the gradDate and the correct welcome function you want it to use.
+then call the welcomeStudentByGraduatingClass, sending it the gradDate and the correct welcome function you want it to use.
 
 
+**STEP 6: Test If It Works**
+```
+User Input Month: May
+User Input Year: 2018
+Output: "Welcome Senior!"
+
+User Input Month: May
+User Input Year: 2023
+Output: "You're still a Junior in high school!"
+```
+
+**STEP 7: Bonus Challenge**
+
+What happens if the user enters a college graduation date of 2026 or higher?
+
+Currently we don't have a case to handle that in our code. So create one! You can create a new welcome function and the correct logic to your other code to correct have the following input output.
+
+```
+User Input Month: May
+User Input Year: 2028
+Output: "whoa, college is some years away..."
+```
 
 #### Level 2 & 3: Closures and Hoisting
 
