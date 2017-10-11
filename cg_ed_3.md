@@ -115,6 +115,110 @@ Now we are ready to move onto Objects... some more practical stuff.
 [CodeSchool - Javascript RoadTrip 3 - Level 4](https://www.codeschool.com/courses/javascript-road-trip-part-3)
 
 
-**STEP 2: Creating Objects**
+**STEP 2: Creating Your First Object: the Teacher Object**
 
-TBD: More to Come...
+Slowly but surely we are going to change our teacher, student and course variables into objects... but let's start with the teacher.
+
+Take a moment before we start... look at the variables we currently have for a teacher, and write down a list of possible property names we might give a teacher object.
+
+Okay cool! Got the list? Does it match mine?
+
+```
+name
+department
+ratings
+addRating
+getAvgRating
+```
+
+Let's start with the list and create a teacher object... with just an object literal declaration (with the curly brackets)...
+```
+var teacher = {
+    // list and fill properties here
+};
+```
+
+1) create the properties name, department and ratings and fill them with the correct values.
+
+2) still have the addRating function? let's move it from outside the teacher object to inside the teacher object. To do that you will have to make it an anonymous function (remove function name), because the property addRating will now be the "name" of the function.
+
+There is something else we can do as well. Since we will only want to add to the ratings array that is the property of the teacher object, we can remove the ratings parameter and use that special word `this` to access the teacher's object ratings array... make sure to keep the newRating parameter. That will still have to come from "outside" the object.... stuck on this one? here is a little bit of help...
+
+```
+var teacher = {
+    // pretend there are other properties here
+    ratings: [3.5, 1.0, 5.0],
+    addRating: function (newRating){
+        this.ratings.push(newRating);
+    },
+};
+```
+
+you also don't need to return the new array, bc it will add it to it's own object. Okay let's move on to the getAvgRating function.
+
+3) Move the getAvgRating function to the teacher object. Remember if any thing inside the function references a property of the teacher object, you should use the `this` keyword to access that property.
+
+
+
+**STEP 3: Using Your Teacher Object**
+
+Remember those prompts you created for your teacher object... well we are going to reuse those, but instead of using our old teacher variables, we are now going to use our new teacher object to make sure everything is working correctly.
+
+To do this you will need to change the addTeacherRating call. You now need to call your addRating property on your teacher object and only pass in the userRating.
+
+Also test to make sure the addRating function is still working, along with the getAvgRating function by printing out the avg rating before and after you add the new rating.
+
+:)
+
+
+**STEP 4: Create A Course Object**
+
+Create a course object with the following properties.
+
+```
+name
+department
+teacher
+semester
+```
+
+Now it's time to change out that double array we currently have. Remember that courses array that hold course as arrays. Well now we have a course object.
+
+Change out the course arrays with object that have the same properties (but different values) as the course object you created above.
+
+
+**STEP 5: Fix the filterCourses function**
+
+Oh no. This might have broken your filterCourses function. Let's update it so it works again.
+
+We used to access the course department with `course[1]` ... how do we change that to get the department property of a course object?
+
+Go ahead and try to update the filterCourses function and text it with the user prompt you created earlier. :)
+
+
+**STEP 6: Adding an object as a property of another object**
+
+In our course object we have teacher property. Currently that teacher property is just a string. But wouldn't it be cool if it was actually a teacher OBJECT! That was we could access the teachers name, department or even avg rating.
+
+Change out the string teacher value in the course object for an actually teacher object. You can create a new object with the same properties as the teacher object OR use the teacher object variable you created in step 1.
+
+Now to test that this worked, let's test this. Console log a course's teacher name.
+
+Hint: you might have to use the dot operator a couple of times. :)
+
+
+
+Okay that is enough for now. Let's move on to learn about Object Prototypes before we continue editing this js file.
+
+
+
+#### Level 5: Prototypes
+
+**STEP 1: Complete JS 3 - Level 5**
+
+[CodeSchool - Javascript RoadTrip 3 - Level 5](https://www.codeschool.com/courses/javascript-road-trip-part-3)
+
+
+**STEP 2: Creating some Object Protoypes**
+
+_TBD_
