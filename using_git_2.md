@@ -22,24 +22,22 @@ Each Team should have 2-3 team member... there are 2-3 roles in this activity...
 
 **Creating a Shared Repository**  
 
-All team members should have a copy of the git cheat sheet project on their computer... however, those were individually forked so only the owner of that project can contribute to it.
+_Person 1_   
+ONLY PERSON 1. Log into Github. **FORK** this repository:  
+[Git Branching Activity](https://github.com/LaunchCoderGirlSTL/git_branching_activity)
 
 In order for all team members to make changes to a github project, they need to be added as collaborators.
 
-So... we are going to create a NEW repo with the same code base but a new github repository (a new remote).
+Navigate to the Settings > Collaborators, and add your team members.
 
-_Person 1._   
-Login to Github. Create a new repository called git_cheat_sheet_collaboration.
 
-After you create the repository, navigate to the Settings > Collaborators, and add you team members.
-
-Okay now we are going to follow these instructions to push your old code to new github repo... they are a little weird and you will most likely never do this again. ha. (I will walk through this in class)  
-[Duplicating a Git Repo](https://stackoverflow.com/questions/6613166/how-to-duplicate-a-git-repository-without-forking)
-
-Sweet!!! now...
 
 _Person 1. Person 2. Person 3._   
 Everyone should now make their own local copy of the project on their computer by cloning it.
+
+```
+git clone <your repository http address>
+```
 
 AND WE ARE NOW READY TO REALLY START!! YEAH!
 
@@ -66,13 +64,13 @@ create a new branch (named whatever you want)
 
 each person make a different change...
 
->person 1 - add another local git command (something about git branching wouldn't be a bad idea)
+>person 1 - add another commiting changes command (something about adding or commiting wouldn't be a bad idea)
 
->person 2 - add another remote git command
+>person 2 - add another branching command (we just learned some things, but you can also google)
 
->person 3 - change some styles... like the color of something or add a description to the title
+>person 3 - change some styles... like the color of something or add a description of what this site is...
 
-once everyone has their changes added and committed on their respective branches... continue...
+once everyone has their changes added and committed on their respective branches on their local repositories... continue...
 
 
 **The Collaboration - Pull Before You Push (your changes)**  
@@ -83,7 +81,7 @@ Collaborating on projects through Github ... remember master branch is the branc
 
 2) make sure your changes are applied "on top" of the official version...
 
-when those 2 things are complete, then you can share your changes with a push.
+when those 2 things are complete, then you can share your changes with a merge & push.
 
 
 
@@ -125,4 +123,9 @@ Does your group have a Person 3?! If so repeat the same process you did for Pers
 
 
 Now everyone... to make sure you have all the latest changes to your git_cheat_sheet_collaboration project... checkout the master branch and pull...
+
 if the branch you just created doesn't have any new changes on it anymore... feel free to delete.
+
+
+
+**To Complete this activity... make sure everyone can see all the team member's changes locally on their own computer :)**
