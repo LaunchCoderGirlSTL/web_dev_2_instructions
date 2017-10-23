@@ -219,6 +219,167 @@ Okay that is enough for now. Let's move on to learn about Object Prototypes befo
 [CodeSchool - Javascript RoadTrip 3 - Level 5](https://www.codeschool.com/courses/javascript-road-trip-part-3)
 
 
-**STEP 2: Creating some Object Protoypes**
+**STEP 2: Turn the Teacher Object into an Re-usable Object Prototype**
 
-_TBD_
+Currently your teacher object should look something like this:
+```
+var teacher = {
+  name: "Sally Smith",
+  department: "Physics",
+  ratings: [4.3, 5.0, 4.7],
+
+  addTeacherRating: function(newRating) {
+    this.ratings.push(newRating);
+  },
+
+  getRatingAvg: function() {
+    var total = 0;
+    for(i=0; i < this.ratings.length; i++) {
+      total = total + this.ratings[i];
+    }
+  return total / this.ratings.length;
+  }
+};
+```
+
+Great! Our code is looking a bit more organized than when we had all those variables individually storing everything. But there is one more improvement we can make... Re-usability! With our current teacher object, we would have to re-make the object literal with every new teacher like:
+```
+var teacherSally = {
+  name: "Sally Smith",
+  department: "Physics",
+  ratings: [4.3, 5.0, 4.7],
+
+  addTeacherRating: function(newRating) {
+    this.ratings.push(newRating);
+  },
+
+  getRatingAvg: function() {
+    var total = 0;
+    for(i=0; i < this.ratings.length; i++) {
+      total = total + this.ratings[i];
+    }
+  return total / this.ratings.length;
+  }
+};
+
+var teacherBobby = {
+  name: "Bobby Smith",
+  department: "Physics",
+  ratings: [4.3, 5.0, 4.7],
+
+  addTeacherRating: function(newRating) {
+    this.ratings.push(newRating);
+  },
+
+  getRatingAvg: function() {
+    var total = 0;
+    for(i=0; i < this.ratings.length; i++) {
+      total = total + this.ratings[i];
+    }
+  return total / this.ratings.length;
+  }
+};
+```
+
+Not the best. We did all that work with our functions and now we can't even re-use the function. So solve this problem we can turn the teacher into an Object Prototype (or class).
+
+First, create a Teacher constructor. Remember Javascript Constructors are just functions that names are capitalized.
+
+```
+function Teacher (<parameters go in here>){
+    // set initial values in here...
+}
+```
+
+This constructor should take parameters to give the Teacher properties their initial values. So for the Teacher class, we need parameters for name, department, and maybe ratings (if you want to, we could also just add their ratings later with the addTeacherRating function, so up to you). Then inside the Teacher Constructor function you need to set the teacher's properties using this... like:
+```
+this.name = <whatever you named this parameter>;
+```
+You should have code like this in your constructor for whatever properties the teacher class has ... in this case... name, department and ratings... all need to be initialized to some value.
+
+Not done yet! what about the functions. Where do we add those?!? Well since those are properties of the teacher object but do NOT need to be "initialized" or set to default values... we can add them to the teacher object AFTER the constructor with:
+```
+Teacher.prototype = {
+    // define other properties in here
+}
+```
+
+So now add the addTeacherRating property and the getRatingAvg property to the Teacher.prototype section.
+
+YEAH your Teacher Prototype should be done!
+
+**STEP 3: Create new Teacher Instances**
+
+Now it's time to make use of the Teacher object re-usability!
+
+Let's create 3 new teachers, using the new key word like:
+```
+// remember to pass in parameters that your construtor takes
+var teacherSally = new Teacher("Sally Smith", "Phsyics", [5.0, 4.3, 4.1]);
+
+// repeat 3 times with different parameters to create different teachers...
+```
+
+now we can add ratings to each of those teachers, get their avg ratings and print them out to make sure everything is working...
+
+Print out the below information to the console... do this with each teacher!
+
+```
+Sally Smith
+Physics
+Avg. Rating: 4.6
+Adding Rating: 5.0
+New Avg Rating: 4.7
+```
+
+Wow! Javascript Prototypes are cool!
+
+**STEP 4: Create Course Prototype**
+
+I am not going to give you so much instruction on this one, but to make the Course variables a prototype follow the same method as we used for teachers...
+
+1) Make a constructor
+2) Create new instances of the Course Class to fill your courses array.
+
+Note: You may have to adjust your filterCourse function... just I would test to make sure it still works. :)
+
+But wait, what should the teacher property's value be? A teacher's name?
+Well now that we have a Teacher Class and new teacher instances, we can use a teacher instance instead of just a teacher name. In the Course constructor, we can pass it a teacher instance to assign the teacher property.
+
+
+**STEP 5: Create A Student Prototype**
+
+It's been a little bit since we have touched the student section of this JS file. So let's go ahead and create a Student Prototype as well... The student prototype will need the properties name, major, email, avgGPA, and a courses array.
+
+After you have created the Student class constructor. Let's add some additional functionality to the student class. Add the following...
+
+addCourse - function - takes a course parameters, and adds it to the Student's courses array.  
+dropCourse - function - takes a course parameter and finds it in the course array and removes it.  
+changeMajor - function takes a string parameter and changes the Student's major property
+
+yeah! We should be done with the Student Prototype! Now let's create some instances of that Prototype.
+
+
+**STEP 6: Using the Student Prototype**
+
+In your html/css that you made, create a new variable for each student you have listed in your design... and store a new instance of the Student Object. Making sure to pass in all the parameters that the Student constructor needs.
+
+Then test the new functions you added!
+Pick one student and a course... and use the addCourse property to add that course to the student's courses array... then let's console log some things to make sure it is working correctly...
+
+```
+Adding Course: <course name>
+To Student's Courses: <student name>
+Now they are taking....
+<list course names of all courses the student is taking>
+```
+
+
+**STEP 7: Conclusion**
+
+WAY TO GO!! ALL OF OUR CHAOTIC VARIABLES ARE OBJECTS AND REUSABLE! THIS IS AMAZING!
+
+
+Now, let's clean up your code and make sure it is organized and properly spaced... maybe add some comments in places where you figured out something confusing.. the USE GIT AND COMMIT!
+
+Onto jQuery ... then we will use these objects to populate our different pages :) YEAH!
