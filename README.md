@@ -20,6 +20,10 @@ This site is just a list of assignments...
 * [CG Education - JS 2](cg_ed_2)
 * [CG Education - JS 3](cg_ed_3)
 
+* [jQuery AJAX](jQuery_ajax)
+
+* [Portfolio Site](portfolio_reqs)
+
 
 ## Other Resources
 
