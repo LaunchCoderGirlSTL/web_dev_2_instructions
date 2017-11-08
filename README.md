@@ -21,6 +21,7 @@ This site is just a list of assignments...
 * [CG Education - JS 3](cg_ed_3)
 
 * [jQuery AJAX](jQuery_ajax)
+* [CG Education - FINAL](cg_ed_final)
 
 * [Portfolio Site](portfolio_reqs)
 
