@@ -34,7 +34,7 @@ YEAH! your courses should now be dynamically creating on load, rather than stati
 
 Now back to html/css for a little bit! We are going to add some dropdown filters to our courses page that look relatively like this:
 
-<img width="80%" src="./images/cg_ed_course_filter.png" />
+<img width="80%" src="./images/cd_ed_course_filter.png" />
 
 
 **STEP 3: Make Filters Work**
