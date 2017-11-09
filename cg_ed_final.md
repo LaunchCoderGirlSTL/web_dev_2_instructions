@@ -34,7 +34,7 @@ YEAH! your courses should now be dynamically creating on load, rather than stati
 
 Now back to html/css for a little bit! We are going to add some dropdown filters to our courses page that look relatively like this:
 
-<img width="80%" src="images/cg_ed_course_filters.png" />
+<img width="80%" src="./images/cg_ed_course_filters.png" />
 
 
 **STEP 3: Make Filters Work**
@@ -66,7 +66,7 @@ Now it's time to make the teacher's page fancy! We are going to a panel that sli
 
 Below is the new design. When a teacher card is clicked... a panel should slide open with a little info about the teacher and an add new rating form. the panel should close when the x in the top right corner is clicked OR on a submit of the add new rating form.
 
-<img width="80%" src="images/cg_ed_teacher_panel.png" />
+<img width="80%" src="./images/cg_ed_teacher_panel.png" />
 
 If you have other questions on how this should work, feel free to ask. We aren't worried about actually doing anything with the new rating yet. Just want to get the html/css and jQuery part working.
 
