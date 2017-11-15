@@ -102,6 +102,16 @@ Okay so. Now we need to make the submit rating button work. This will require:
 Whew. This is going to be a lot of work. But I believe in you. I am purposely leaving the instructions vague, so you have to use some brain power to logically figure out how the html/css, jQuery and javascript are going to work together here. Remember there are definitely more than one way to get this to work.
 
 
-#### Student Courses
+#### New Students
 
---- coming soon ---
+Okay, You should be getting the hang of it by now... so I am going to give you a little less instruction and just describe our next feature. We are going to add a panel (it doesn't have to slide open, it can just stay open) to the student page that looks like this:
+
+<img width="80%" src="./images/cg_ed_new_student.png" />
+
+This form should allow you to create a new student. Somethings to get you started...
+
+1) I don't think we have created a student object prototype in our javascript yet so at some point we are going to need to do that.
+2) Dynamically creating the students like we did with the courses and teachers could be helpful for when we want to add the new student.
+3) Currently, our new student form does not have a place to upload an image or add courses, so don't worry about those 2 things for now. You should just use a place holder for new student images.
+
+Alight, good luck! Let a mentor know if you have questions about getting started.
