@@ -115,3 +115,16 @@ This form should allow you to create a new student. Somethings to get you starte
 3) Currently, our new student form does not have a place to upload an image or add courses, so don't worry about those 2 things for now. You should just use a place holder for new student images.
 
 Alight, good luck! Let a mentor know if you have questions about getting started.
+
+
+#### THE END
+
+So you can be done with this project now! whoo!
+
+But if you want to add some additional features I have some ideas:
+
+1) Create an Individual Course Page. So when you click on a course, it takes you to a page where you can view information just about that one course.
+
+2) On that individual course page, add a form that allows you to add students to a course roster. You should only be able to add students that exist in your Javascript and you are going to have to modify the Course Object a little so you can have a roster property to fill with student objects. YEAH!
+
+I bet you have experience with interacting with applications like this on the web... do you have any features you think could be added?
