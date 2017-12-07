@@ -23,6 +23,8 @@ This site is just a list of assignments...
 * [jQuery AJAX](jQuery_ajax)
 * [CG Education - FINAL](cg_ed_final)
 
+* [ES 2015 - Practice](es2015)
+
 * [Portfolio Site](portfolio_reqs)
 
 
